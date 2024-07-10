@@ -1,1 +1,263 @@
-<h1> test </h1>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Shinigami Eyes Anti-Semitism version" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-content">
+
+            <section class="section-top">
+                    <div class="section-inner">
+                        <h1>Shinigami Eyes Anti-Semitism version</h1>
+                    </div>
+            </section>
+        <section class="section-header">
+                <div class="section-inner">
+                <div>A browser addon that highlights Anti-Semitic and Jewish-friendly
+                    social media pages/accounts with different colours.</div>
+                <ul>
+                    <li><a href="">No chrome web store page yet</a></li>
+                </ul>
+                <div class="social-links">
+                        <a href="https://github.com/Blagai/Anti-Semitism-Shinigami-Eyes">GitHub repository</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-faq">
+            <div class="section-inner">
+                <h2>FAQ</h2>
+
+                <h3>How does it work?</h3>
+                This extension will colour known Jewish-friendly (green) and Anti-semitic (red) users/pages differently.
+
+                <h3>Which sites are supported?</h3>
+                This extension supports Twitter, Facebook, Reddit, Tumblr, Medium, YouTube, Wikipedia articles, and search engines.
+
+                <h3>How does it know how to color each page?</h3>
+                Manual data gathering, I might integrate machine learning or an AI into it at some point if it's not too complicated.
+
+                <h3>Does it submit the list of pages that appear on my screen?</h3>
+                No, the check is done offline, on your computer.
+
+                <h3>Which criteria is used to determine the label?</h3>
+                This extension is focused on Anti-Semitic sentiment of all flavours: Anti-Israel, religious, alt-right, etc.
+
+                <h3>Can I see the list of pages and their labels?</h3>
+                Yes, but I'm not sure what ID the browser will give the extension, so I can't tell you how to do it specfically,
+                but if you don't have many extension, it shouldn't be too complicated to find the data.
+
+                <h3><a name="install-on-mobile">Can I use it on my phone?</a></h3>
+                <p>
+                    Not yet, but I do plan on making it possible using FireFox Nightly.
+                    Note however that you won't be able to right-click (and therefore set new labels).
+                </p>
+
+                <h3>Is there a mechanism in place to prevent malicious/fake reports?</h3>
+                <p>
+                    Yes. While your overrides are immediately visible to you, changes are included in the publicly visible dataset only if they pass some trustworthiness criteria (including human validation).
+                </p>
+
+                <h3>What's the origin of this extension's name?</h3>
+                <p><a href="https://shinigami-eyes.github.io/">The original</a> Shinigami Eyes extension, made for trans people.</p>
+                <h3>Why did you create this extension?</h3>
+                <p>Both conservative and progressive communities and people have rampant anti-semitism in them. Be it
+                   "progressive" anti-semitism (the "Jews don't belong in the Middle East" people), or the straight-up
+                   nazi shit, it's anti-semitism nonetheless.
+                    <p>
+                    The purpose of this extension is to make Jewish people feel more confident towards people,
+                    groups, and pages they can trust, and to highlight possible interactions with the anti-semitic
+                    ones.
+                
+            </div>
+        </section>
+
+
+
+
+
+        <section class="section-guidelines">
+            <div class="section-inner">
+                <h2>Guidelines: how to </h2>
+                Do not flag unless you're reasonably confident about your decision.
+                <br><br>
+
+
+
+
+                <h3>Not enough to mark as Anti-Semitic</h3>
+                Being Muslim or Arab, supporting anti-semitic political parties for other reasons, being a bad or medicore ally, etc.<br>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/arab.jpg">
+                        <div class="fb-user">Amira</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            This year I will finally make it to the Kaaba, marking my first Hajj.
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Being Muslim or Arab
+                    </div>
+                    <div class="reasoning">
+                        While there are certainly some big issues with Islam as a religion, there are some big issues with most religions.
+                        Try not to be prejudiced just because of someone's religion and/or ethnicity.
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/grandma.jpg">
+                        <div class="fb-user">Grandma</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            I'm very glad [anti-semitic party] won the elections here. I completely agree with
+                            their economic plans, and I think they'll do good for us.
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Supporting anti-semitic political parties for other reasons
+                    </div>
+                    <div class="reasoning">
+                        When in doubt, assume good faith and don't tag someone or some page as Anti-Semitic just because
+                        they might be uninformed or don't take a stance.
+                    </div>
+                </div>
+
+
+
+              
+                <h3>Mark as Anti-Semitic</h3>
+                "Free Palestine", <a href="https://en.wikipedia.org/wiki/Alt-right">alt-right</a>, nazis and neo-nazis, anti-semitic conspiracy theorists, etc.
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/arab.jpg">
+                        <div class="fb-user assigned-label-antisem">Amira</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            We must drive the colonial Jewish state away from Palestine and back to Europe
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Being against Israel, claiming Jews are colonisers in are homeland, etc.
+                    </div>
+                    <div class="reasoning">
+                        Erasure of Jewish historical identity is anti-semitic.
+                        Hoewver, beware of people stating Jews shouldn't be allowed in other countries, having a right to go back
+                        to our homeland and being forced to go back to our homeland are very different things.
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/pepe.jpg">
+                        <div class="fb-user assigned-label-antisem">Racist Frog</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            Again the Jews and the blacks are ruining our country. When will people realise?
+                        </div>
+                    </div>
+                    <div class="summary">
+                        This is staright-up nazi shit. Actual conspiracy theories about Jews also count.
+                    </div>
+                    <div class="reasoning">
+                        If the person writing this sort of thing is either clearly joking or is Jewish
+                        themselves, don't mark. I make nazi jokes with my friends all the time, it's pretty
+                        common amongst Gen Z jews.
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/tiffany.jpg">
+                        <div class="fb-user assigned-label-antisem">Tiffany 🔻</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            I stand with Palestine and Hamas. The genocide Israel is committing is terrible and needs to be stopped.
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Using common dogwhistles, accusing Israel of committing genocide, and having the Hamas-supportive red triangle in username.
+                    </div>
+                    <div class="reasoning">
+                        If a person supports Hamas or any anti-semitic terrorist organisation, whether by dogwhistles or outright stating it, that is anti-semitic.
+                        Baselessly accepting that Israel is committing genocide is also anti-semitic.
+                        Only caring about human rights when it concerns Israel also counts (Ignoring what's happening to Kurds and other
+                        groups in the world, while claiming to care about human rights "by standing up for Palestinians").
+                    </div>
+                </div>
+
+
+
+
+                <h3>Not enough to mark as Jewish-friendly</h3>
+                Being Jewish, having a bare minimum standard of "hurting innocents = bad", etc.<br>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/sarah.jpg">
+                        <div class="fb-user">Sarah</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            Pesah is soon, does anybody know of a good place to buy Matsos in Houston?
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Being Jewish
+                    </div>
+                    <div class="reasoning">
+                        Don't assume someone is not anti-semitic just because they are Jewish themselves.
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/feminism.jpg">
+                        <div class="fb-user">Your Average Feminist Page</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            The amount of women killed by Hamas in the 7th of October massacre is terrible.
+                            We should all condemn this violence.
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Condemning physical violence
+                    </div>
+                    <div class="reasoning">
+                        Being against people being killed or raped is, for most people, a very low bar of expectations,
+                        even if they're anti-semitic.
+                        It's true that most anti-semites will simply avoid posting anything at all, but
+                        err on the safe side and don't tag as Jewish-friendly.
+                    </div>
+                </div>
+              
+
+
+              
+                <h3>Mark as trans-friendly</h3>
+                Openly supporting Jews or calling out anti-semitism.<br>
+                <div class="example">
+                    <div class="fb-post">
+                        <img class="fb-thumb" src="https://raw.githubusercontent.com/Blagai/AntiSemSite/sample-users/sarah.jpg">
+                        <div class="fb-user assigned-label-jewfriend">Adria</div>
+                        <div class="fb-timestamp">11 hrs</div>
+                        <div class="fb-text">
+                            The anti-semitism rampant in the world since the beginning of the Gaza war is terrible.
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Openly supporting Jews and condemning anti-semitism.
+                    </div>
+                    <div class="reasoning"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="section-footer">
+            <a href="/privacy-policy">Privacy policy</a>
+        </footer>
+    </div>
+</body>
+
+</html>
